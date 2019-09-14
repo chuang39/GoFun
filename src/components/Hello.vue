@@ -14,8 +14,9 @@ export default {
   name: 'hello',
   // data用来定义返回数据的属性
   data () {
+      console.log('=====kevin')
     return {
-      msg: 'hello,xxbandy！',
+      msg: 'hello,xdsafadsfxbandy！',
       site: "bgops",
       url: "https://xxbandy.github.io",
     }
@@ -23,7 +24,8 @@ export default {
   // 用于定义js的方法
   methods: {
     details: function() {
-      return this.site + "数据运维"
+        console.log('=====kevin')
+      return this.url
     }
   }  
 }

@@ -23,6 +23,9 @@ func HelloPage(c *gin.Context) {
 
 func main() {
     r := gin.Default()
+
+    r.Use(Validate())  //Use validate() for authentication
+
     v1 := r.Group("/v1")
     {
         v1.GET("/hello", HelloPage)
